@@ -8,7 +8,7 @@ class TempPage extends StatefulWidget{
 
 class _TempPageState extends State<TempPage> {
   final _controller = TextEditingController();
-  //var _temp = Temp();
+  var _temp = Temp();
 
   var _feedbackText = '';
 
@@ -18,8 +18,9 @@ class _TempPageState extends State<TempPage> {
     if (temp == null) {
       _feedbackText = 'Input Error';
     }
+
     else {
-      //_temp = Temp(temp);
+      _temp = Temp(temp);
     }
   }
 
